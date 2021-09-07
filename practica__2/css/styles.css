@@ -17,6 +17,10 @@ body{
     background-color: #eee;
     font-family: 'Poppins';
 }
+
+hr{
+    display: none;
+}
 .logo{
     width: 80px;
     height: 80px;
@@ -109,7 +113,17 @@ body{
     font-size: 3.5rem;
     color: #2e2d2d;
     text-shadow: 0px 0px 5px #1b1b1b40;
+    margin-bottom: 10px;
 }
+
+.span{
+    color: white;
+    background-color: var(--color-text);
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+
 
 .hero__cta{
     text-decoration: none;
@@ -161,7 +175,7 @@ body{
     padding:80px 0;
 }
 
-.cards__title{
+.title{
     text-align: center;
     font-size: 2rem;
     color: var(--color-text);
@@ -222,6 +236,28 @@ body{
 .card__cta--js:hover{
     box-shadow: 0px 0px 10px var(--yellow-duck);
     transition: .2s;
+}
+
+/*----------------------------About----------------------------*/
+.about__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about__figure{
+    width: 40%;
+}
+
+.about__texts{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.about__subtitle{
+    background-color: var(--green-smoot);
+    display: inline;
 }
 
 

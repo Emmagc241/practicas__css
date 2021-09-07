@@ -7,6 +7,11 @@
 
 :root{
     --color-text:#232C33;
+    --red-smoot:#EB3336;
+    --smoke:#f2f2f2;
+    --yellow-duck:#FDC500;
+    --blue-smoot:#0075F2;
+    --green-smoot:#2cc784;
 }
 body{
     background-color: #eee;
@@ -21,25 +26,29 @@ body{
     background-color:white ;
     height: 90px;
     width: 100%;
-    padding: .1px;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-evenly;
-    gap: 150px;
+    gap: 50px;
 }
 
 .nav__container{
-    width: 70%;
+    width: 60%;
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    margin-top: 10px;
-   
+    margin-top: 10px; 
+}
+
+.nav__container li{
+    display: flex;
+    text-align: center;
 }
 
 .nav__container--2{
-    width: 30%;
+    width: 40%;
     justify-content: space-evenly;
 }
 
@@ -47,7 +56,8 @@ body{
     text-decoration: none;
     color: var(--color-text);
     padding: 10px 30px;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    
 }
 
 .nav__link:hover{
@@ -55,26 +65,26 @@ body{
 }
 
 .nav__link--ini{
-    background-color: #2079d3f1;
+    background-color:dodgerblue;
     color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #2222227d;
 }
 
 .nav__link--ini:hover{
-    background-color: #0075F2;
+    background-color: var(--blue-smoot);
     color: white;
 }
 
 .nav__link--reg{
-    background-color: #eb3336f1;
+    background-color: #eb3336d5;
     color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #2222227d;
 }
 
 .nav__link--reg:hover{
-    background-color: #EB3336;
+    background-color: var(--red-smoot);
     color: white;
 }
 
@@ -110,6 +120,12 @@ body{
     margin-top: 20px;
 }
 
+.hero__cta:hover{
+   outline: 1px solid rgba(19, 192, 108, 0.688);
+   box-shadow: 0px 0px 10px #2cc784;
+   transition: .2s;
+}
+
 .hero__img{
     width: 50%;
 }
@@ -141,9 +157,12 @@ body{
    padding: 50px;
 }
 
+.cards{
+    padding:80px 0;
+}
+
 .cards__title{
     text-align: center;
-    margin-top: 50px;
     font-size: 2rem;
     color: var(--color-text);
     margin-bottom: 50px;
@@ -182,10 +201,29 @@ body{
     background-color: orangered;
 }
 
+.card__cta--html:hover{
+    box-shadow: 0px 0px 10px orangered;
+    transition: .2s;
+}
+
 .card__cta--css{
     background-color: dodgerblue;
 }
 
-.card__cta--js{
-    background-color: #FDC500;
+.card__cta--css:hover{
+    box-shadow: 0px 0px 10px dodgerblue;
+    transition: .2s;
 }
+
+.card__cta--js{
+    background-color: var(--yellow-duck);
+}
+
+.card__cta--js:hover{
+    box-shadow: 0px 0px 10px var(--yellow-duck);
+    transition: .2s;
+}
+
+
+
+

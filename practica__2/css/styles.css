@@ -73,6 +73,8 @@ hr{
     color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #2222227d;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .nav__link--ini:hover{
@@ -85,12 +87,15 @@ hr{
     color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 10px #2222227d;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .nav__link--reg:hover{
     background-color: var(--red-smoot);
     color: white;
 }
+/*------------------------------Hero------------------------------------*/
 
 .hero{
     height: 500px;
@@ -148,8 +153,10 @@ hr{
     width: 100%;
 }
 
+/*---------------------Cards----------------------------------*/
 
 .container{
+    width: 80%;
     max-width: 1200px;
     margin: auto;
 }
@@ -247,19 +254,123 @@ hr{
 
 .about__figure{
     width: 40%;
+    height: 350px;
+}
+
+.about__img{
+    height: 100%;
+    width: 100%;
 }
 
 .about__texts{
     width: 50%;
     height: 100%;
     margin: auto;
+    align-self: flex-start;
+    text-align: center;
 }
 
 .about__subtitle{
     background-color: var(--green-smoot);
-    display: inline;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.about__card--rev{
+    flex-direction: row-reverse;
+    
 }
 
 
 
+
+/*Footer*/
+
+
+.footer{
+    height: 60px;
+    background-color:var(--green-smoot);
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+}
+
+.great{
+    color: #2e2d2d;
+    text-shadow: 0px 0px 5px #1b1b1b40;
+}
+
+
+/*-------------------Media Query------------------------------------*/
+
+
+@media screen and (max-width:1015px) {
+    /*----NAV------*/
+
+    .nav{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        gap: 0px;
+    }
+
+    .nav__container{
+        width: 100%;
+    }
+
+
+    .hero{
+        height: auto;
+    }
+
+    .hero__container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero__texts{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .hero__img{
+        display: none;
+    }
+
+    .cards__container{
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    .about{
+        width: 100%;
+
+    }
+    .about__card{
+        flex-direction: column-reverse;
+    }
+
+    .about__card--rev{
+        margin-top: 50px;
+    }
+
+    .about__texts{
+        width: 80%;
+    }
+
+    .about__figure{
+        width: 80%;
+    }
+
+    
+}
 

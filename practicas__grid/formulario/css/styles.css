@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Poppins';
+}
+body{
+    font-family: 'Poppins';
+}
+
+.contact{
+    min-height: 600px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: 1fr;
+}
+
+.contact__figure{
+    grid-column: 5/-1;
+    grid-row:1/-1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contact__figure::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(34% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: #16d6a9;
+    z-index: -1;
+}
+
+.contact__img{
+    width: 90%;
+}
+
+.contact__form{
+    grid-column: 1/5;
+    grid-row: 1/-1;
+    place-self: center;
+
+    display: grid;
+    width: 70%;
+    gap: 30px;
+}
+
+.contact__title{
+    font-size: 40px;
+    color:#1b1b1b;
+}
+
+.contact__title::after{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 120px;
+    background-color:#16d6a9;
+    margin-top: 10px; 
+}
+
+.contact__input{
+    padding: 20px 10px;
+    font-family: var(--font);
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: #5e5e5e;
+}
+
+.contact__input--area{
+    height: 150px;
+    resize: none;
+}
+
+.contact__cta{
+    width: 50%;
+    max-width: 200px;
+    padding: 20px 5px;
+    cursor: pointer;
+    font-family: var(--font);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color:#16d6a9;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.contact__cta:hover{
+    background-color:#55daae;
+}
+
+@media screen and (max-width:850px) {
+    .contact__form{
+        grid-column: 1/-1;
+        grid-row: 2/2;
+        padding: 40px 0;
+        width: 90%;
+    }
+
+    .contact__figure{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    .contact__figure::before{
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
+
+    .contact__cta{
+        margin: auto;
+    }
+}

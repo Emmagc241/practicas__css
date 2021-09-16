@@ -325,7 +325,7 @@ body{
     }
 
     .wave{
-        padding-top: 50px;
+        display: none;
     }
 
 }
